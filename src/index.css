@@ -1,5 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=League+Spartan:wght@300;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Anta", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #84C7D0;
+}
+
+#root {
+  width: 100%;
+}
+
+.container {
+  width:30%;
+  margin:auto;
+  border: 5px #F9E0D9 solid;
+  border-radius: 0.7rem;
+  background-color: #75DDDD;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 5px #F9E0D9 solid;
+}
+
+.container > p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container .add-form {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px #F9E0D9 dashed;
+}
+
+.task {
+  margin: 0.5rem 1rem;
+  padding-left: 0.2rem;
+  cursor: pointer;
+}
+
+.task h3 {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task svg {
+  margin-left: 4rem;
+}
+
+.reminder {
+  border-left:3px green solid;
+}
+
+.btn-block {
+  margin-left:auto;
+  margin-right: 1rem;
+}
+
+.add-form .form-control {
+  margin-bottom: 0.5rem;
+}
+
+.add-form .form-control:nth-of-type(1) label {
+  margin-right: 5rem;
+}
+
+.add-form .form-control:nth-of-type(2) label {
+  margin-right: 2rem;
+}
+
+.add-form .form-control:nth-of-type(3) label {
+  margin-right: 1rem;
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 3px;
+}
+
+footer {
+  margin-top: 5rem;
+  border-top: 5px #F9E0D9 dashed;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+footer p {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+footer a {
+  color:black
 }

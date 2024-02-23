@@ -88,7 +88,7 @@ function Homepage() {
       {showAddTask && <AddTask onAdd={addTask}/>}
 
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete=
-      {deleteTask} onToggle={toggleReminder} /> : 'No Tasks To Show'}
+      {deleteTask} onToggle={toggleReminder} /> : <p>No Tasks To Show</p>}
 
       <Footer />
     </div>
